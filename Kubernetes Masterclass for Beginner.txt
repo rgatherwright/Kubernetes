@@ -1,0 +1,11 @@
+Kubernetes Masterclass for Beginners command list
+
+# Kubernetes
+
+//Exit Shell: exit or Ctrl+D
+//Create docker:  docker run -it ubuntu
+//Kube directory:  cd .kube
+//Force Kill Frozen Exec: kill -9 $(pidof kubectl)
+
+
+
