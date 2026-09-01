@@ -3,9 +3,10 @@ Kubernetes Masterclass for Beginners command list
 # Kubernetes
 
 # Exit Shell: exit or Ctrl+D
-# Create docker:  docker run -it ubuntu
+# Create unbuntu docker:  docker run -it ubuntu
 # Kube directory:  cd .kube
 # Force Kill Frozen Exec: kill -9 $(pidof kubectl)
 # Get context:  kubectl config get current-context /this will be for rancher-desktop on my pc
-
-
+# Pipe pod yaml file to less in powershell using wsl.exe:  Kubectl get pod nginx-ryan -o yaml | wsl less
+# #Edit yamil file:  Kubectl edit pod nginx-ryan
+#
