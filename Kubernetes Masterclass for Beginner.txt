@@ -1,12 +1,31 @@
-Kubernetes Masterclass for Beginners command list
+#Kubernetes Masterclass for Beginners command list
 
 # Kubernetes
 
-# Exit Shell: exit or Ctrl+D
-# Create unbuntu docker:  docker run -it ubuntu
-# Kube directory:  cd .kube
-# Force Kill Frozen Exec: kill -9 $(pidof kubectl)
-# Get context:  kubectl config get current-context /this will be for rancher-desktop on my pc
-# Pipe pod yaml file to less in powershell using wsl.exe:  Kubectl get pod nginx-ryan -o yaml | wsl less
-# #Edit yamil file:  Kubectl edit pod nginx-ryan
-#
+# Exit Shell: 
+  exit or Ctrl+D
+
+# Create unbuntu docker 
+  docker run -it ubuntu
+# Create a pod  
+  kubectl run <pod-name> --image=<image-name>
+
+# Kube directory  
+  cd .kube
+
+# Force Kill Frozen Exec
+  kill -9 $(pidof kubectl)
+
+# Get context
+  kubectl config get current-context /this will be for rancher-desktop on my pc
+# Generate or write a YAML file
+  kubectl run nginx-pod --image=nginx --dry-run=client -o yaml > pod.yaml
+# Pipe pod yaml file to less in powershell using wsl.exe
+  Kubectl get pod nginx-ryan -o yaml | wsl less
+# #Edit yamil file 
+  Kubectl edit pod nginx-ryan
+# Create a nginx pod from yaml file named "nginx.yaml"
+  kubectl create -f ngnix.yaml
+  Kubectl apply -f nginx.yaml
+# Detailed, human-readable overview of a Kubernetes resource named "nginx-yaml"
+  Kubectl describe pod nginx-yaml
