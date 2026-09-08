@@ -15,17 +15,28 @@
 
 # Force Kill Frozen Exec
   kill -9 $(pidof kubectl)
-
+# Set Alias in powershell of 'k' for kubectl
+  Set-Alias -Name k -Value kubectl
 # Get context
   kubectl config get current-context /this will be for rancher-desktop on my pc
 # Generate or write a YAML file
   kubectl run nginx-pod --image=nginx --dry-run=client -o yaml > pod.yaml
 # Pipe pod yaml file to less in powershell using wsl.exe
   Kubectl get pod nginx-ryan -o yaml | wsl less
-# #Edit yamil file 
+# #Edit yamil file for a pod 
   Kubectl edit pod nginx-ryan
 # Create a nginx pod from yaml file named "nginx.yaml"
   kubectl create -f ngnix.yaml
   Kubectl apply -f nginx.yaml
 # Detailed, human-readable overview of a Kubernetes resource named "nginx-yaml"
   Kubectl describe pod nginx-yaml
+# Get info on running pods, including IP address, node, etc
+  kubectl get pods -o wide
+# delete a pod
+  Kubectl delete pod nginx-ryan
+# Enter interactive mode on a nginx pod
+  kubectl exec -it nginx-ryan -- /bin/bash
+# Determine OS from interactive terminal
+  root@nginx-ryan:/# cat /etc/os-release
+# Update OS on Pod
+  root@nginx-ryan:/etc/nginx# apt update
