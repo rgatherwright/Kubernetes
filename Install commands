@@ -6,3 +6,5 @@
   apt install tree
 #install curl
    apt install tree
+#install htop
+  apt install htop
