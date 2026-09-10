@@ -1,0 +1,6 @@
+#Deployment commands
+
+#Create a deployment with httpd image and 3 read replicas
+  Kubectl create deployment --image=httpd --replicas=3
+#Show deployments
+  kubectl get deployments.apps
