@@ -1,0 +1,8 @@
+#Install commands
+
+#Install ping
+  apt install iputils-ping
+#install tree
+  apt install tree
+#install curl
+   apt install tree
