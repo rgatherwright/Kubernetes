@@ -4,3 +4,9 @@
   Kubectl create deployment --image=httpd --replicas=3
 #Show deployments
   kubectl get deployments.apps
+#edit deployments
+  kubectl edit deployments.apps NAME
+#delete a deployment and underlying resources
+  kubectl delete deployments.apps NAME
+#Describe yaml
+  kubectl describe deployments.apps NAME
