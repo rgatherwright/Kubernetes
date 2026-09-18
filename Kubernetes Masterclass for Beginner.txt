@@ -17,8 +17,10 @@
   kill -9 $(pidof kubectl)
 # Set Alias in powershell of 'k' for kubectl
   Set-Alias -Name k -Value kubectl
+
 # Get context
   kubectl config get current-context /this will be for rancher-desktop on my pc
+
 # Generate or write a YAML file
   kubectl run nginx-pod --image=nginx --dry-run=client -o yaml > pod.yaml
 # Pipe pod yaml file to less in powershell using wsl.exe
@@ -30,6 +32,7 @@
   Kubectl apply -f nginx.yaml
 # Detailed, human-readable overview of a Kubernetes resource named "nginx-yaml"
   Kubectl describe pod nginx-yaml
+
 # Get info on running pods, including IP address, node, etc
   kubectl get pods -o wide
 # delete a pod
@@ -40,3 +43,5 @@
   root@nginx-ryan:/# cat /etc/os-release
 # Update OS on Pod
   root@nginx-ryan:/etc/nginx# apt update
+# repeat the command 3 times for get pods
+  Watch -n  3 kubectl get pods
