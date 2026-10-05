@@ -43,5 +43,7 @@
   root@nginx-ryan:/# cat /etc/os-release
 # Update OS on Pod
   root@nginx-ryan:/etc/nginx# apt update
-# repeat the command 3 times for get pods
+# repeat the command 3 times for get pods (linux)
   Watch -n  3 kubectl get pods
+# repeat command ether second using PS Watch module
+  Watch-Command { kubectl get pods } -Seconds 1
