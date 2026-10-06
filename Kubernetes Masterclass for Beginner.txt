@@ -2,9 +2,6 @@
 
 # Kubernetes
 
-# Exit Shell: 
-  exit or Ctrl+D
-
 # Create unbuntu docker 
   docker run -it ubuntu
 # Create a pod  
@@ -12,11 +9,6 @@
 
 # Kube directory  
   cd .kube
-
-# Force Kill Frozen Exec
-  kill -9 $(pidof kubectl)
-# Set Alias in powershell of 'k' for kubectl
-  Set-Alias -Name k -Value kubectl
 
 # Get context
   kubectl config get current-context /this will be for rancher-desktop on my pc
@@ -43,7 +35,4 @@
   root@nginx-ryan:/# cat /etc/os-release
 # Update OS on Pod
   root@nginx-ryan:/etc/nginx# apt update
-# repeat the command 3 times for get pods (linux)
-  Watch -n  3 kubectl get pods
-# repeat command every second using PS Watch module
-  Watch-Command { kubectl get pods } -Seconds 1
+
