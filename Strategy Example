@@ -1,0 +1,6 @@
+# 3 replicas, max unavaible 1
+ strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
