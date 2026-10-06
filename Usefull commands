@@ -6,5 +6,10 @@
   kill -9 $(pidof kubectl)
 # Set Alias in powershell of 'k' for kubectl
   Set-Alias -Name k -Value kubectl
+# Output help to text file in powershell.
 k create deploy -h | Out-File -FilePath .\Deploy.txt
-  Output help to text file in powershell.
+ 
+# repeat command every second using PS Watch module
+  Watch-Command { kubectl get pods } -Seconds 1
+# repeat the command 3 times for get pods (linux)
+  Watch -n  3 kubectl get pods
