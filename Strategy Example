@@ -4,3 +4,7 @@
       maxSurge: 1
       maxUnavailable: 1
     type: RollingUpdate
+
+#Recreate all replicas for a deployment to a new image.   Stops all replicas.
+ strategy:
+    type: Recreate
