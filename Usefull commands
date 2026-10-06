@@ -1,1 +1,10 @@
-
+# Exit Shell: 
+  exit or Ctrl+D
+# split ps window
+  Alt + Shifr + =
+# Force Kill Frozen Exec
+  kill -9 $(pidof kubectl)
+# Set Alias in powershell of 'k' for kubectl
+  Set-Alias -Name k -Value kubectl
+k create deploy -h | Out-File -FilePath .\Deploy.txt
+  Output help to text file in powershell.
