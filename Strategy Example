@@ -1,6 +1,6 @@
-# 3 replicas, max unavaible 1
+# 3 replicas, can go to 4 while updating 1 replica
  strategy:
     rollingUpdate:
-      maxSurge: 25%
-      maxUnavailable: 25%
+      maxSurge: 1
+      maxUnavailable: 1
     type: RollingUpdate
