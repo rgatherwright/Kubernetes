@@ -8,6 +8,7 @@
   kubectl edit deployments.apps NAME
 #delete a deployment and underlying resources
   kubectl delete deployments.apps NAME
-#Describe yaml
+#Describe yaml 
   kubectl describe deployments.apps NAME
-
+#Create a pod in a particular namespace
+  k run ryan-lab --image=nginx --namespace lab
