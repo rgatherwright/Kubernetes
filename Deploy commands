@@ -10,5 +10,4 @@
   kubectl delete deployments.apps NAME
 #Describe yaml
   kubectl describe deployments.apps NAME
-#Create a name space yaml ex.
-  k create namespace mealie -o yaml --dry-run=client
+
