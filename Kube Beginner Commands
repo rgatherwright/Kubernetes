@@ -36,3 +36,5 @@
 # Update OS on Pod
   root@nginx-ryan:/etc/nginx# apt update
 
+#Create a name space yaml ex.
+  k create namespace mealie -o yaml --dry-run=client
