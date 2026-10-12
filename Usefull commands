@@ -15,3 +15,5 @@ k create deploy -h | Out-File -FilePath .\Deploy.txt
   Watch -n  3 kubectl get pods
 # Copy a file and rename the new file (linux)
   cp deploy.yaml deploy2.yaml
+# make a directory in (linux) called deployments
+  mkdir Deployments
