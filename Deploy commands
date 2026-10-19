@@ -12,3 +12,5 @@
   kubectl describe deployments.apps NAME
 #Create a pod in a particular namespace
   k run ryan-lab --image=nginx --namespace lab
+#Set up port forwarding for a pod
+  k port-forward pods/mealie-66d67cdc89-w87nl 9000
